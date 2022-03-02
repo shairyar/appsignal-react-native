@@ -1,6 +1,6 @@
 // Appsignal configuration
 const Appsignal = require("@appsignal/javascript").default
-const appsignal = new Appsignal({ key: "YOUR FRONTEND API KEY" })
+const appsignal = new Appsignal({ key: "8197fa3d-b285-4069-8e02-2acab3082947", revision: "12345xyz" })
 
 import { plugin } from "@appsignal/plugin-window-events"
 appsignal.use(plugin())
@@ -20,7 +20,7 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
 
   // Raising an exception
   throw new Error(
-    JSON.stringify({ message: 'Some new exception message sent via plugin', foo: 'bar' })
+    JSON.stringify({ message: '5 Exception message sent via plugin', foo: 'bar' })
   )
   
   return (
